@@ -1,0 +1,20 @@
+Mar 10 21:34:21.916 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Mar 10 21:34:21.917 HYPERVISOR: Started on IP = localhost, TCP port = 2732.
+Mar 10 21:34:22.411 HYPERVISOR: exec_cmd: hypervisor version 
+Mar 10 21:34:22.411 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Soubite\GNS3\projects\Memory\project-files\dynamips 
+Mar 10 21:34:22.411 GENERAL: working_dir=C:\Users\Soubite\GNS3\projects\Memory\project-files\dynamips
+Mar 10 21:34:22.411 HYPERVISOR: exec_cmd: ethsw create Switch3 
+Mar 10 21:34:27.931 HYPERVISOR: exec_cmd: nio create_udp udp-afe9d0f0-aa8e-401f-943f-4377e9bb9d6d 10000 127.0.0.1 10001 
+Mar 10 21:34:27.932 HYPERVISOR: exec_cmd: ethsw add_nio Switch3 udp-afe9d0f0-aa8e-401f-943f-4377e9bb9d6d 
+Mar 10 21:34:27.957 HYPERVISOR: exec_cmd: ethsw set_access_port Switch3 udp-afe9d0f0-aa8e-401f-943f-4377e9bb9d6d 1 
+Mar 10 21:34:30.206 HYPERVISOR: exec_cmd: nio create_udp udp-a66d0499-782f-4151-89b9-f3982e0b5961 10057 127.0.0.1 10056 
+Mar 10 21:34:30.206 HYPERVISOR: exec_cmd: ethsw add_nio Switch3 udp-a66d0499-782f-4151-89b9-f3982e0b5961 
+Mar 10 21:34:30.226 HYPERVISOR: exec_cmd: ethsw set_access_port Switch3 udp-a66d0499-782f-4151-89b9-f3982e0b5961 1 
+Mar 10 21:36:17.103 HYPERVISOR: exec_cmd: ethsw set_access_port Switch3 udp-a66d0499-782f-4151-89b9-f3982e0b5961 1 
+Mar 10 21:36:17.107 HYPERVISOR: exec_cmd: ethsw set_access_port Switch3 udp-afe9d0f0-aa8e-401f-943f-4377e9bb9d6d 1 
+Mar 10 21:36:17.380 HYPERVISOR: exec_cmd: ethsw set_access_port Switch3 udp-a66d0499-782f-4151-89b9-f3982e0b5961 1 
+Mar 10 21:36:17.385 HYPERVISOR: exec_cmd: ethsw set_access_port Switch3 udp-afe9d0f0-aa8e-401f-943f-4377e9bb9d6d 1 
+Mar 10 21:38:02.698 HYPERVISOR: exec_cmd: ethsw set_access_port Switch3 udp-a66d0499-782f-4151-89b9-f3982e0b5961 1 
+Mar 10 21:38:02.705 HYPERVISOR: exec_cmd: ethsw set_access_port Switch3 udp-afe9d0f0-aa8e-401f-943f-4377e9bb9d6d 1 
+Mar 10 21:38:39.157 HYPERVISOR: exec_cmd: ethsw set_access_port Switch3 udp-a66d0499-782f-4151-89b9-f3982e0b5961 1 
+Mar 10 21:38:39.157 HYPERVISOR: exec_cmd: ethsw set_access_port Switch3 udp-afe9d0f0-aa8e-401f-943f-4377e9bb9d6d 1 
