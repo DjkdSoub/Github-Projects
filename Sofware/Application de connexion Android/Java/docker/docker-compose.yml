@@ -1,0 +1,41 @@
+version: '3.9'
+
+services:
+  mysql-spring-mobile:
+    image: mysql:8.0
+    container_name: container_mysql-spring-mobile
+    environment:
+      MYSQL_ROOT_PASSWORD: root@123#
+      MYSQL_DATABASE: examendb
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root@123#
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: mysqladmin ping -h 127.0.0.1 -u $$MYSQL_USER --password=$$MYSQL_PASSWORD
+    networks:
+      - db_network
+
+  phpmyadmin-spring-mobile:
+    container_name: container_phpmyadmin
+    image: phpmyadmin/phpmyadmin:latest
+    ports:
+      - "8085:80"
+    environment:
+      MYSQL_ROOT_PASSWORD: root@123#
+      PMA_HOST: mysql-spring-mobile
+      PMA_USER: root
+      PMA_PASSWORD: root@123#
+    depends_on:
+      - mysql-spring-mobile
+    restart: unless-stopped
+    networks:
+      - db_network
+volumes:
+  mysql_data:
+    driver: local
+
+networks:
+  db_network:
